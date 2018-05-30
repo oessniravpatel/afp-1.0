@@ -1,0 +1,72 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "admin"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [
+        "assets/plugins/jquery-1.10.2.js",
+        "assets/plugins/bootstrap/bootstrap.min.js",
+        "assets/plugins/dataTables/jquery.dataTables.js",
+        "assets/plugins/dataTables/dataTables.bootstrap.js",
+        "assets/plugins/metisMenu/jquery.metisMenu.js",
+        "assets/scripts/perfect-scrollbar.js",
+        "assets/scripts/siminta.js",
+        "assets/plugins/morris/raphael-2.1.0.min.js",
+        "assets/plugins/morris/morris.js",
+        "assets/scripts/dashboard-demo.js",
+        "assets/scripts/custom.js"       
+      ],  
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

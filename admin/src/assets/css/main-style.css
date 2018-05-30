@@ -1,0 +1,346 @@
+﻿
+/*====================================
+ Free To Use For Personal And Commercial Usage
+Author: http://binarytheme.com
+ Share Us if You Like our work 
+ Enjoy Our Codes For Free always.
+======================================*/
+
+/* user image section */
+.user-section {
+    /*margin-top:10px;*/
+    font-size:22px;
+    background-color: #072b49;
+	border-bottom: 1px solid #0085AD;
+	/*background-color:rgb(83, 163, 163);*/
+}
+.user-section-inner {
+    height: 65px;
+	width: 65px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+.user-section-inner img {
+    margin-left:10px;
+    width: 50px;
+    height: 50px;
+	border-radius: 50%; background:#fff;	
+}
+.user-info {
+    display: block;
+    color: #fff !important;
+	/*display: inline-block;*/
+	padding: 30px 0 30px 0;
+	text-align: center;
+}
+.user-text-online {
+    font-size:18px;
+    color:#fff
+}
+.user-circle-online {
+    width: 15px!important;
+    height: 15px!important;
+}
+
+/* side-menu section */
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color:rgba(74, 72, 126, 0);
+}
+.navbar-top-links  .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #e8e4e4;
+}
+.navbar-top-links > li > a {
+color: #FFFFFF;
+}
+.nav > li > a {
+padding: 20px 15px;
+}
+.nav > li > ul > li > a {
+padding-left: 45px;
+}
+.sidebar-collapse {
+    background-color: #072b49; height: 100%;
+}
+
+ #side-menu a {
+           color:#fff;
+           border-bottom: 1px solid #0085AD !important;
+           height: 55px;
+        }
+        .selected {
+            background-color: #21AA97;
+        }
+/* back colors */
+        .blue {
+            background-color:rgb(113, 159, 241);
+        }
+         .green {
+            background-color:rgb(144, 236, 192);
+        }
+
+		.d-blue {
+            background-color: #002049;
+        }
+         .d-green {
+            background-color: #799628;
+        }
+        .yellow {
+            background-color: #F89318;
+        }
+		.light-blue {
+			background-color: #1AAC98;
+		}
+		.purple {
+			background-color: #65277D;
+		}
+		.light-pink {
+			background-color: #B8044A;
+		}
+		.dash-panel {background-color: #e8e4e4;}
+		
+
+  /* No border */
+.no-boder {
+    border:0px solid #5bc0de !important;
+}
+/* tap nvbar Section */
+
+#navbar {
+    height: 105px; /*height:63px;*/ border: none; background: url("../img/afp-pattern.png") center -5px no-repeat #FAFAFA; background-size: 250px; padding: 0 15px;
+}
+.navbar-top-links .btn-add{padding: 10px 15px; min-height:0!important; margin: 21px 0 0 0; border: none;}
+.navbar-brand {
+    padding-left:20px;
+	padding: 7px 15px;
+}
+.navbar-brand img {
+    height: 92px;
+	/*height: 45px;*/
+}
+.top-label {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -24px;
+	margin-right: -24px;
+}
+
+.fa-3x {
+	color: #333;
+	font-size: 2em;
+}
+
+/*large font*/
+.large-font {
+    font-size:18px;
+}
+html.index_admin,.index_admin body{ height:100%;}
+.index_admin body {
+    background: url("../img/welcome.jpg") center center no-repeat; 
+	background-size:cover; height:100%;
+}
+.index_admin > div{height:100%;}
+.index_admin app-root > div,.index_admin app-login div.body-Login-back{height:100%;}
+.index_admin .white_bg{background:rgba(255,255,255,0.6); height:100%;}
+
+.margin-tips {
+    margin:5px;
+}
+.navbar-default {
+	border-color: #0085AD;
+}
+
+/* Custom Width */
+
+.width_4 {
+	width: 4%;
+}
+.width_5 {
+	width: 5%;
+}
+.width_6 {
+	width: 6%;
+}
+.width_7 {
+	width: 7%;
+}
+.width_8 {
+	width: 8%;
+}
+.width_10 {
+	width: 10%;
+}
+.width_15 {
+	width: 15%;
+}
+.width_18 {
+	width: 18%;
+}
+.width_20 {
+	width: 20%;
+}
+.width_30 {
+	width: 30%;
+}
+.width_35 {
+	width: 35%;
+}
+.width_40 {
+	width: 40%;
+}
+.width_45 {
+	width: 45%;
+}
+.width_50 {
+	width: 50%;
+}
+.width_60 {
+	width: 60%;
+}
+
+button[disabled], html input[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+ /* ckeditor custom style  */
+
+textarea.cke_source {
+	height: 100% !important;
+}
+
+/*media queries*/
+
+@media(max-width:320px) {
+	.navbar-brand {
+		padding: 7px 0;
+	}
+}
+
+@media(min-width:768px) 
+{
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        /*min-height: 1000px;*/
+    }
+
+}
+
+@media(max-width:768px) {
+#wrapper {
+    /*margin-top:140px!important;*/
+    
+}
+}
+
+@media(max-width:767px) {
+	.navbar-top-links li:last-child {
+		margin-right: 0px;
+		margin-top: 3%;
+	}
+	
+	.navbar-top-links li {
+		display: block;
+	}
+	
+	div.dataTables_filter label {
+		float: none !important;
+	}
+	
+	#wrapper {
+		margin-top:140px!important;
+	}
+	
+	.navbar-right {
+		float: right;
+	}
+	.navbar-default {}
+	.account_menu {margin-top: -5px;}
+	
+	.navbar-static-side {
+		position: inherit;
+	}
+	#navbar {
+     	background: #fafafa;
+	}
+	.navbar-fixed-top {
+		position: absolute;
+	}
+}
+
+@media (min-width: 992px) {
+     ul li ul.dropdown-menu {display:block; opacity:0; visibility:hidden;-moz-transform: translateY(24px);-ms-transform: translateY(24px);-o-transform: translateY(24px);transform: translateY(24px);-moz-transition: all .25s ease-out;-ms-transition: all .25s ease-out;-o-transition: all .25s ease-out;transition: all .25s ease-out; }
+     ul li:hover ul.dropdown-menu {opacity:1; top:15px; visibility:visible; transition-property: color, background-color; -webkit-transform: translateY(24px);-moz-transform: translateY(24px);-ms-transform: translateY(24px);-o-transform: translateY(24px);transform: translateY(24px);-moz-transition: all .25s ease-out;-ms-transition: all .25s ease-out;-o-transition: all .25s ease-out;transition: all .25s ease-out; }
+}
+
+@media (max-width: 991px) {
+	.extra-info {
+		top: 0;
+	}
+	#navbar {
+    	background-size: 200px;
+}
+	/*.table-responsive {
+		overflow-x: auto;
+	}*/
+}
+
+@media (max-width: 1024px) {
+	.table-responsive {
+		overflow-x: auto;
+	}
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 999px) and (orientation:landscape) {
+	.index_admin body {
+		background-size: auto;
+	}
+	.index_admin .white_bg {
+		height: auto;
+	}
+}
+
+/*@media (min-width:1500px){ 
+	#page-wrapper{
+		min-height: 800px!important;
+		}
+	.navbar-default {
+		height: 100%;
+		}
+}
+	
+@media (min-width:1800px){ 
+	#page-wrapper{
+		min-height: 900px!important;
+		}
+	.navbar-default {
+		height: 100%;
+		}
+}
+	
+@media (min-width:2000px){ 
+	#page-wrapper{
+		min-height: 1000px!important;
+		}
+	.navbar-default {
+		height: 100%;
+		}
+}*/
+
+@media screen and (min-width:1800px){ 
+	/*#page-wrapper{
+		min-height: 1000px!important;
+		}*/
+	.navbar-static-side .sidebar-collapse {
+		height: 87%;
+		}
+}

@@ -1,0 +1,17 @@
+<header class="home_page">
+  <div class="container">
+    <div class="row"> 
+      <!-- Logo -->
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <div class="logo" *ngIf="!globals.logohome" > <a (click)="home()"><img src="assets/images/logo_home.png" alt="Association for Financial Professionals - AFP" title="Association for Financial Professionals - AFP" class="img-responsive" /></a> </div>
+        <div class="logo"  *ngIf="globals.logohome"> <a (click)="home()"><img src="assets/images/logo.png" alt="Association for Financial Professionals - AFP" title="Association for Financial Professionals - AFP" class="img-responsive" /></a> </div>
+      </div>
+      <!-- End Logo -->
+      <div class="col-md-9 col-sm-9">
+        <div class="img_strips"> <img src="assets/images/home_strips.png" alt="" class="img-responsive" /> </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+<div class="clearfix"></div>

@@ -1,0 +1,108 @@
+<!-- Inner Section -->
+<div class="inner_content general_user_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2>AFP Corporate Training Skills Assessment</h2>
+        <h1>{{assessmentData.AssessmentName}}</h1>
+        <a routerLink="/dashboard" class="back_btn"><i class="fa fa-reply"></i>Back to Dashboard</a>
+        <div class="clearfix visible-xs"></div>
+        <h4 class="h4_nomargin"><span>Date Taken :</span> {{assessmentData.EndTime | date:'MM-dd-yyyy'}}</h4>
+        <h4><span>Team Size :</span> {{assessmentData.TeamSize}} <!--<span><i class="hidden-xs">|</i> <br class="visible-xs">Covered KSA :</span> {{assessmentData.totalksa}} <span><i class="hidden-xs">|</i> <br class="visible-xs">Time Taken :</span> 01:12:34--></h4>
+        <p class="padding_30">{{assessmentData.Description}}</p>
+        <h3>Assessment Results</h3>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-8 col-sm-8 ">
+        <div class="grey_box">
+          <div id="gneraluser_result" class="generaluser_chart_block"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="grey_box height_510px">
+          <h3>By Rating Scale</h3>
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th class="width_80">Rating Scale</th>
+              <th class="text-center width_20">%</th>
+            </tr>
+            <tr  *ngFor="let rscale of rscaleData; let i = index">
+              <td><strong>{{i+1}} - {{rscale.Name}}</strong><br>
+                {{rscale.Description}} </td>
+              <td class="text-center">{{rscale.PercentOfKSA}}%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 col-sm-12">
+        <div class="domain_desc">
+          <h3>Domains Definition</h3>
+          <div> 
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="Definition" class="active" ><a href="#Strategy" aria-controls="Strategy" role="tab" data-toggle="tab">Strategy</a></li>
+              <li role="Definition"><a href="#Analyzing" aria-controls="Analyzing" role="tab" data-toggle="tab">Gathering and Analyzing Information</a></li>
+              <li role="Definition"><a href="#Forecasting" aria-controls="Forecasting" role="tab" data-toggle="tab">Forecasting with Systems and Tools</a></li>
+              <li role="Definition"><a href="#Communication" aria-controls="Communication" role="tab" data-toggle="tab">Communication and Presentation Techniques</a></li>
+				<li role="Definition"><a href="#Business" aria-controls="Business" role="tab" data-toggle="tab">Business Partnering</a></li>
+				<li role="Definition"><a href="#Budgeting" aria-controls="Budgeting" role="tab" data-toggle="tab">Budgeting and Financal Principles</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="Strategy">
+                <table class="table table-hover table-bordered">
+                  <tbody>
+                    <tr>
+                      <th class="text-left width_20">Competency Area</th>
+                      <th class="text-left width_80">Description</th>
+                    </tr>
+                    <tr>
+                      <td>Corporate Strategy/Strategic Planning</td>
+                      <td>sd fsdf</td>
+                    </tr>
+                    <tr>
+                      <td>Data Strategy</td>
+                      <td>sd fsdf</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="Analyzing">...</div>
+              <div role="tabpanel" class="tab-pane" id="Forecasting">...</div>
+              <div role="tabpanel" class="tab-pane" id="Communication">...</div>
+				<div role="tabpanel" class="tab-pane" id="Business">...</div>
+				<div role="tabpanel" class="tab-pane" id="Budgeting">...</div>
+            </div>
+          </div>
+         <!-- <div class="accordion_scroll">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default" *ngFor="let domain of careaData; let i=index">
+                <div class="panel-heading" role="tab" id="heading{{i}}">
+                  <h4 class="panel-title"> <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" aria-expanded="true" aria-controls="collapse1">{{domain.Name}}<span class="icon_span"></span></a> </h4>
+                </div>
+                <div id="collapse{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      <table class="table table-hover table-bordered">
+                        <tr>
+                          <th class="text-left width_30">Competency Area</th>
+                          <th class="text-left width_80">Description</th>
+                        </tr>
+                        <tr *ngFor="let area of domain.carea">
+                          <td>{{area.Name}}</td>
+                          <td>{{area.Description}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<!-- End Inner Section --> 
